@@ -6,6 +6,7 @@
 <% end %>
 
 <div>
+<<<<<<< HEAD
   <% if @repos %>
   <ul> <% @repos.each do |repo| %>
       <li> <%= repo['name'] %> </li>
@@ -18,5 +19,13 @@
     <li>A C implementation of Tetris using Pennsim through LC4</li>
     <li> <a href="https://github.com/dtrupenn/Tetris">https://github.com/dtrupenn/Tetris</a> </li>
   <% end %>
+=======
+  <ul>
+    <% @repos.each do |repo| %>
+    <li> repo.name </li>
+    <li> repo.description </li>
+    <li> repo.url </li>
+    <% end %>
+>>>>>>> 02bd0ed17f9e836593c84a36e91c76ad8cd1abed
   </ul>
 </div>
